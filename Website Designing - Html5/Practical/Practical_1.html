@@ -1,0 +1,81 @@
+<!-- Create a audio video tag
+        also applied properties like muted loop autoplay
+        Create some shape using canvas tag in html
+        create some shape using svg tag in html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        audio,h3
+        {
+            border: 2px solid black;
+            background-color: thistle;
+            text-align: center;
+        }
+        audio
+        {
+            margin-left: 450px;
+        }
+        .video
+        {
+            height: 300px;
+            width: 400px ;
+            margin-left: 400px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset style="border: solid black; background-color: skyblue;" >
+        <h3>Audio Task</h3>
+        <audio src="./ssvid.net--Ranchhod-Rangila-Sabhiben-Ahir-RAJESH-AHIR-Song-Of-Faith.mp3" controls type="audio/mp3"></audio><hr>
+    </fieldset><br><br>
+
+    <fieldset style="border: solid black; background-color: skyblue;">
+         <h3>Video Task</h3>
+         <video class="video" src="./ssvid.net--Deva-Deva-Film-Version-Brahmāstra-Amitabh-BRanbir-aliabhatt-PritamArijit_1080p.mp4" autoplay controls></video>
+    </fieldset><br><br>
+
+    <fieldset style="border: solid black; background-color: skyblue; text-align: center;">
+    <h3>SVG_TAG</h3>
+        <h4>1. Circle:</h4>
+        <svg height="200">
+  <circle cx="100" cy="100" r="80" stroke="blue" stroke-width="3" fill="lightblue" />
+</svg>
+       
+       <h4>2. Line:</h4>
+       <svg  height="200">
+  <line x1="10" y1="10" x2="190" y2="190" stroke="red" stroke-width="4" />
+</svg>
+          </fieldset><br><br>
+  
+    <fieldset style="border: solid black; background-color: skyblue; text-align: center;">
+   <h3>Canvas_tag</h3>
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+
+    <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+  // Rectangle
+  ctx.fillStyle = "darkgreen";
+  ctx.fillRect(20, 20, 100, 60);
+
+  // Triangle
+  ctx.beginPath();
+  ctx.moveTo(300, 100);
+  ctx.lineTo(250, 150);
+  ctx.lineTo(350, 150);
+  ctx.closePath();
+  ctx.fillStyle = "green";
+  ctx.fill();
+</script>
+</dt>
+</dd>
+</fieldset><br><br>
+
+</body>
+</html>
